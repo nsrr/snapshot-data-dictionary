@@ -1,0 +1,10 @@
+slug: snapshot
+visit: visit
+charts:
+- chart: gender
+  title: Gender
+webservers:
+  - name: production
+    url: https://sleepdata.org
+  - name: staging
+    url: https://preview.sleepdata.org
