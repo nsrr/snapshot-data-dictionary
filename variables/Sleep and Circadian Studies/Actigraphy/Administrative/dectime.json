@@ -1,0 +1,6 @@
+{
+  "id": "dectime",
+  "display_name": "Start sleep time  changed to decimal format",
+  "description": "",
+  "type": "numeric"
+}

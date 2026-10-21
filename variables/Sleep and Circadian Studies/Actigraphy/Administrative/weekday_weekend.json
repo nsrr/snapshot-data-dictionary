@@ -1,0 +1,7 @@
+{
+  "id": "weekday_weekend",
+  "display_name": "Day of the week of study",
+  "description": "",
+  "type": "choices",
+  "domain": "days"
+}

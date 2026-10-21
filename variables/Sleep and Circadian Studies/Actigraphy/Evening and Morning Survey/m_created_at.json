@@ -1,0 +1,7 @@
+{
+  "id": "m_created_at",
+  "display_name": "Date and time that morning survey was created",
+  "description": "",
+  "type": "time",
+  "units": "yyyy-mm-dd HH:MM:SS"
+}

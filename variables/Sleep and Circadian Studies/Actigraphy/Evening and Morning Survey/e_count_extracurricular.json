@@ -1,0 +1,6 @@
+{
+  "id": "e_count_extracurricular",
+  "display_name": "How many times did you attend any other extracurricular activities today, besides academic activities and exercise-based activities??",
+  "description": "",
+  "type": "integer"
+}

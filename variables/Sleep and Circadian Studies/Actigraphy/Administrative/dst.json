@@ -1,0 +1,7 @@
+{
+  "id": "dst",
+  "display_name": "Daylight saving time status at interval start",
+  "description": "US DST rules applied to the real start_date + start_time before shifting",
+  "type": "integer",
+  "domain": "dst"
+}

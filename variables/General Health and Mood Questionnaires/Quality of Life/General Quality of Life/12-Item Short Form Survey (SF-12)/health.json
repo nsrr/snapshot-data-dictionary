@@ -1,0 +1,7 @@
+{
+  "id": "health",
+  "display_name": "In general, would you say your health is: ",
+  "description": "",
+  "type": "choices",
+  "domain": "health"
+}

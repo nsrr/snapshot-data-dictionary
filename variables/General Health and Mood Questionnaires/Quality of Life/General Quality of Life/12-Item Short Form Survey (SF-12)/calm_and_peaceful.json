@@ -1,0 +1,7 @@
+{
+  "id": "calm_and_peaceful",
+  "display_name": "These questions are about how you feel and how things have been with you during the past 4 weeks. For each question, please give the one answer that comes closest to the way you have been feeling.",
+  "description": "How much of the time during the past 4 weeks...    a) Have you felt calm and peaceful?",
+  "type": "choices",
+  "domain": "time_6"
+}

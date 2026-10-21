@@ -1,0 +1,6 @@
+{
+  "id": "menstrual",
+  "display_name": "(Female only) Please indicate what days of the past week you had menstrual-related bleeding",
+  "description": "",
+  "type": "string"
+}

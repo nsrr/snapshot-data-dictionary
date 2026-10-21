@@ -1,0 +1,7 @@
+{
+  "id": "e_count_academic",
+  "display_name": "How many academic activites did you attend today?",
+  "description": "",
+  "type": "integer",
+  "units": "number of events"
+}

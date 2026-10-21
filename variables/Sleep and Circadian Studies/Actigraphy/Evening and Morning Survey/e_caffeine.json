@@ -1,0 +1,6 @@
+{
+  "id": "e_caffeine",
+  "display_name": "How many total servings of caffeine did you have today? [See online guide for the definition of a 'serving']",
+  "description": "",
+  "type": "integer"
+}

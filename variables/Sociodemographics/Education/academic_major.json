@@ -1,0 +1,7 @@
+{
+  "id": "academic_major",
+  "display_name": "Academic major:  ",
+  "description": "",
+  "type": "choices",
+  "domain": "academic_major"
+}

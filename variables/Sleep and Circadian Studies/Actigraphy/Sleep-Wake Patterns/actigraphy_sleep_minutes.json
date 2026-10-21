@@ -1,0 +1,7 @@
+{
+  "id": "actigraphy_sleep_minutes",
+  "display_name": "Duration of sleep ",
+  "description": "",
+  "type": "numeric",
+  "units": "minutes (min)"
+}

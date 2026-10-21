@@ -1,0 +1,7 @@
+{
+  "id": "m_date",
+  "display_name": "Day of morning survey",
+  "description": "",
+  "type": "time",
+  "units": "yyyy-mm-dd"
+}

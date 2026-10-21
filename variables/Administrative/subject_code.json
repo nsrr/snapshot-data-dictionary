@@ -1,0 +1,6 @@
+{
+  "id": "subject_code",
+  "display_name": "Code assigned to each subject",
+  "description": "",
+  "type": "identifier"
+}

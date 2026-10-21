@@ -1,0 +1,32 @@
+[
+  {
+    "value": "African Amer",
+    "display_name": "African Amer",
+    "description": ""
+  },
+  {
+    "value": "Asian",
+    "display_name": "Asian",
+    "description": ""
+  },
+  {
+    "value": "More than one",
+    "display_name": "More than one",
+    "description": ""
+  },
+  {
+    "value": "Other",
+    "display_name": "Other",
+    "description": ""
+  },
+  {
+    "value": "UNK",
+    "display_name": "Unk",
+    "description": ""
+  },
+  {
+    "value": "White",
+    "display_name": "White",
+    "description": ""
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "id": "nsrrid",
+  "display_name": "NSRR subject ID",
+  "description": "This subject identifier was created by the National Sleep Research Resource (NSRR) team to more easily match with file downloads. Source: :subjectid:",
+  "type": "identifier",
+  "commonly_used": true
+}

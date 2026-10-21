@@ -1,0 +1,7 @@
+{
+  "id": "academic_year",
+  "display_name": "What year of college are you currently in? ",
+  "description": "",
+  "type": "choices",
+  "domain": "academic_year"
+}

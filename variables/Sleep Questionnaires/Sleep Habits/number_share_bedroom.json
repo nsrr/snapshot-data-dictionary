@@ -1,0 +1,9 @@
+{
+  "id": "number_share_bedroom",
+  "display_name": "How many people do you share your bedroom with?",
+  "description": "",
+  "type": "text",
+  "labels": [
+    "sleep_enviroment"
+  ]
+}

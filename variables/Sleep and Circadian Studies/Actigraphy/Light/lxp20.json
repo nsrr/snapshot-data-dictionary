@@ -1,0 +1,7 @@
+{
+  "id": "lxp20",
+  "display_name": "% of interval above 20 lux during the sleep start to sleep end interval",
+  "description": "",
+  "type": "numeric",
+  "units": "Percentage"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "actigraphy_brief_wake_ratio",
+  "display_name": "Wakes <1 minute/Total wakes",
+  "description": "",
+  "type": "numeric"
+}

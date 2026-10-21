@@ -1,0 +1,7 @@
+{
+  "id": "height_in",
+  "display_name": "What is your height? Inches",
+  "description": "",
+  "type": "numeric",
+  "units": "inches (in)"
+}

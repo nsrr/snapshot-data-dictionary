@@ -1,0 +1,7 @@
+{
+  "id": "weekly_three",
+  "display_name": "In the last week, how often have you felt that things were going your way?",
+  "description": "",
+  "type": "choices",
+  "domain": "weekly_re"
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "value": "Freshman",
+    "display_name": "Freshman",
+    "description": ""
+  },
+  {
+    "value": "Sophomore",
+    "display_name": "Sophomore",
+    "description": ""
+  },
+  {
+    "value": "Junior",
+    "display_name": "Junior",
+    "description": ""
+  },
+  {
+    "value": "Senior",
+    "display_name": "Senior",
+    "description": ""
+  },
+  {
+    "value": "Dropped",
+    "display_name": "Dropped",
+    "description": ""
+  }
+]

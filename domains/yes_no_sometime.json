@@ -1,0 +1,17 @@
+[
+  {
+    "value": "Yes",
+    "display_name": "Yes",
+    "description": ""
+  },
+  {
+    "value": "No",
+    "display_name": "No",
+    "description": ""
+  },
+  {
+    "value": "Sometimes",
+    "display_name": "Sometimes",
+    "description": ""
+  }
+]

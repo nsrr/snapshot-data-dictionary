@@ -1,0 +1,6 @@
+{
+  "id": "month_start",
+  "display_name": "Calendar month of the real baseline visit survey_timestamp, before date shifting",
+  "description": "",
+  "type": "integer"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "m_awakening_one_time",
+  "display_name": "Time of first awakening",
+  "description": "",
+  "type": "time",
+  "units": "yyyy-mm-dd HH:MM:SS"
+}

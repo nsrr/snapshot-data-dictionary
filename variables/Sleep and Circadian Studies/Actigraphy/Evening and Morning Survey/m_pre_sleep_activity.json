@@ -1,0 +1,6 @@
+{
+  "id": "m_pre_sleep_activity",
+  "display_name": "In the 60 minutes before trying to fall asleep, did you spend at least 5 minutes doing any of the following?",
+  "description": "Choose all that apply] Interacting with people in person =4\nInteracting with people through electronic media (e.g. emails, calls, sms, skype, chat, online games) =1  \n2 or 0 indicate that did not interact with people",
+  "type": "string"
+}

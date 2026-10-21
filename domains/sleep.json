@@ -1,0 +1,12 @@
+[
+  {
+    "value": "0",
+    "display_name": "Had sleep in the last 24 hours",
+    "description": ""
+  },
+  {
+    "value": "1",
+    "display_name": "Did not sleep in the last 24 hours",
+    "description": ""
+  }
+]

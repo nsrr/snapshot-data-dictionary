@@ -1,0 +1,10 @@
+{
+  "id": "share_bedroom",
+  "display_name": "Do you share your bedroom with someone? ",
+  "description": "",
+  "type": "choices",
+  "domain": "yes_no_sometime",
+  "labels": [
+    "sleep_enviroment"
+  ]
+}

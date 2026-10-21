@@ -1,0 +1,10 @@
+{
+  "id": "live_alone_roommates",
+  "display_name": "Do you live alone or with roommates/flatmates?",
+  "description": "",
+  "type": "choices",
+  "domain": "live_alone_roommates",
+  "labels": [
+    "sleep_enviroment"
+  ]
+}

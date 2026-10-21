@@ -1,0 +1,7 @@
+{
+  "id": "lxm10k",
+  "display_name": "Minutes above 10,000 lux during the sleep start to sleep end interval",
+  "description": "",
+  "type": "integer",
+  "units": "minutes (min)"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "gpa_last",
+  "display_name": "GPA for the last semester",
+  "description": "",
+  "type": "numeric"
+}

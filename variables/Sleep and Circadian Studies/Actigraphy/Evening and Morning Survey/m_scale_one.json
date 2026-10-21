@@ -1,0 +1,6 @@
+{
+  "id": "m_scale_one",
+  "display_name": "Indicate how you feel right now. Sleepy = 0, Alert = 100  (VAS)",
+  "description": "",
+  "type": "integer"
+}

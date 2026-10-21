@@ -1,0 +1,6 @@
+{
+  "id": "e_scale_four",
+  "display_name": "Indicate how you feel right now. Healthy = 0, Sick = 100  (VAS)",
+  "description": "",
+  "type": "integer"
+}

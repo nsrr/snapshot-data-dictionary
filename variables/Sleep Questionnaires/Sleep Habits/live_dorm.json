@@ -1,0 +1,10 @@
+{
+  "id": "live_dorm",
+  "display_name": "Where do you live? ",
+  "description": "",
+  "type": "choices",
+  "domain": "live_dorm",
+  "labels": [
+    "sleep_enviroment"
+  ]
+}

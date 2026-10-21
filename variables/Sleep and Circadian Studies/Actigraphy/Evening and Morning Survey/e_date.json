@@ -1,0 +1,7 @@
+{
+  "id": "e_date",
+  "display_name": "Day of evening survey",
+  "description": "",
+  "type": "time",
+  "units": "yyyy-mm-dd"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "actigraphy_study_day",
+  "display_name": "Day of study",
+  "description": "",
+  "type": "integer"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "lxm20",
+  "display_name": "Minutes above 20 lux during the sleep start to sleep end interval",
+  "description": "",
+  "type": "integer",
+  "units": "minutes (min)"
+}

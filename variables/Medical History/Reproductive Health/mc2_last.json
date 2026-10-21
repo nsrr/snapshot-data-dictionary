@@ -1,0 +1,7 @@
+{
+  "id": "mc2_last",
+  "display_name": "Please choose the first day of bleeding and the last day of bleeding for each of your menstrual cycles in the last 6 weeks. b) Menstrual Cycle 2: LAST day of bleeding",
+  "description": "",
+  "type": "time",
+  "units": "yyyy-mm-dd"
+}

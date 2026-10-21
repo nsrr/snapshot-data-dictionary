@@ -1,0 +1,17 @@
+[
+  {
+    "value": "0",
+    "display_name": "Spontaneously awoke",
+    "description": ""
+  },
+  {
+    "value": "1",
+    "display_name": "Awoken by an alarm",
+    "description": ""
+  },
+  {
+    "value": "2",
+    "display_name": "Awoken by another disturbance",
+    "description": ""
+  }
+]

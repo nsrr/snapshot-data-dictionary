@@ -1,0 +1,7 @@
+{
+  "id": "updated_at",
+  "display_name": "Any subsequent saves caused this date/time to update",
+  "description": "",
+  "type": "time",
+  "units": "yyyy-mm-dd"
+}

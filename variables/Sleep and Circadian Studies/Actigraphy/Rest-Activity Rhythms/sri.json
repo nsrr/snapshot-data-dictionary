@@ -1,0 +1,7 @@
+{
+  "id": "sri",
+  "display_name": "Calculated - Based on eDiary data, the SRI is the calculated percentage probability of an individual being in the same state (asleep vs. awake) at any two time-points 24_h apart, averaged across the study.",
+  "description": "",
+  "type": "numeric",
+  "calculation": "calculated"
+}

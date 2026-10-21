@@ -1,0 +1,7 @@
+{
+  "id": "m_no_sleep_24",
+  "display_name": "Did or did not sleep in the last 24 hours?",
+  "description": "",
+  "type": "choices",
+  "domain": "sleep"
+}

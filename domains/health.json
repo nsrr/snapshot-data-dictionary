@@ -1,0 +1,27 @@
+[
+  {
+    "value": "Excellent",
+    "display_name": "Excellent",
+    "description": ""
+  },
+  {
+    "value": "Very good",
+    "display_name": "Very good",
+    "description": ""
+  },
+  {
+    "value": "Good",
+    "display_name": "Good",
+    "description": ""
+  },
+  {
+    "value": "Fair",
+    "display_name": "Fair",
+    "description": ""
+  },
+  {
+    "value": "Poor",
+    "display_name": "Poor",
+    "description": ""
+  }
+]

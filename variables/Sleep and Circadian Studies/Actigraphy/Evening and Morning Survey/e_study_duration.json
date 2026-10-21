@@ -1,0 +1,7 @@
+{
+  "id": "e_study_duration",
+  "display_name": "How many hours did you study by yourself today, not including any of the academic activities in the previous question?",
+  "description": "",
+  "type": "integer",
+  "units": "hours (hr)"
+}

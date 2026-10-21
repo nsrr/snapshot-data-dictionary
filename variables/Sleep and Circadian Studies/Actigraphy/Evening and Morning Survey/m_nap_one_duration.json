@@ -1,0 +1,6 @@
+{
+  "id": "m_nap_one_duration",
+  "display_name": "Duration of first nap",
+  "description": "",
+  "type": "integer"
+}

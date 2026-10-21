@@ -1,0 +1,7 @@
+{
+  "id": "lxmax",
+  "display_name": "Highest light measurement",
+  "description": "",
+  "type": "integer",
+  "units": "lux"
+}

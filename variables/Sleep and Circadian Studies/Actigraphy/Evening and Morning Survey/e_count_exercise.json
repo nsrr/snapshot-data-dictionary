@@ -1,0 +1,7 @@
+{
+  "id": "e_count_exercise",
+  "display_name": "How many times did you engage in any exercise-based activities today (including sports, gym, cycling, etc.)?",
+  "description": "",
+  "type": "integer",
+  "units": "number of events"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "e_extracurricular",
+  "display_name": "Did you attend any other extracurricular activities today, besides academic activities and exercise-based activities? [Yes / No]",
+  "description": "",
+  "type": "choices",
+  "domain": "yes_1_no_0"
+}

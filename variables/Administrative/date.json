@@ -1,0 +1,7 @@
+{
+  "id": "date",
+  "display_name": "Date of the diary entry",
+  "description": "",
+  "type": "time",
+  "units": "yyyy-mm-dd"
+}

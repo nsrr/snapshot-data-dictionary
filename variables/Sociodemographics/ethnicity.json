@@ -1,0 +1,7 @@
+{
+  "id": "ethnicity",
+  "display_name": "Not Hispanic/Latino or Hispanic/Latino",
+  "description": "",
+  "type": "choices",
+  "domain": "ethnicity"
+}

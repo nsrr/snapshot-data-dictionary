@@ -1,0 +1,10 @@
+{
+  "id": "number_room_flat_mates",
+  "display_name": "How many roommates/flatmates do you live with?",
+  "description": "",
+  "type": "integer",
+  "units": "counts",
+  "labels": [
+    "sleep_enviroment"
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "id": "e_scale_five",
+  "display_name": "Indicate how you feel right now. Calm Relaxed = 0, Stressed Out = 100  (VAS)",
+  "description": "",
+  "type": "integer"
+}

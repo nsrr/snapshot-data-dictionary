@@ -1,0 +1,7 @@
+{
+  "id": "limit_climbing_stairs",
+  "display_name": "Does your health now limit you in these activities?",
+  "description": "If so, how much?  b) Climbing several flights of stairs",
+  "type": "choices",
+  "domain": "limit_climbing_stairs"
+}

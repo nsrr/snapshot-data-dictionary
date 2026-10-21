@@ -1,0 +1,7 @@
+{
+  "id": "m_created_dst",
+  "display_name": "Daylight saving time status when morning questionnaire entry was created",
+  "description": "US DST rules applied to the real m_created_at before shifting",
+  "type": "integer",
+  "domain": "dst"
+}

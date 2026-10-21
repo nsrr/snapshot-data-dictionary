@@ -1,0 +1,7 @@
+{
+  "id": "weight_lbs",
+  "display_name": "What is your weight?",
+  "description": "",
+  "type": "integer",
+  "units": "pounds (lb)"
+}

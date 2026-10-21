@@ -1,0 +1,7 @@
+{
+  "id": "end_time",
+  "display_name": "End sleep time",
+  "description": "",
+  "type": "time",
+  "units": "HH:MM:SS"
+}

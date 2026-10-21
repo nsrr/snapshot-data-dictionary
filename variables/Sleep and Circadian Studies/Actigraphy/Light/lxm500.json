@@ -1,0 +1,7 @@
+{
+  "id": "lxm500",
+  "display_name": "Minutes above 500  lux during the sleep start to sleep end interval",
+  "description": "",
+  "type": "integer",
+  "units": "minutes (min)"
+}

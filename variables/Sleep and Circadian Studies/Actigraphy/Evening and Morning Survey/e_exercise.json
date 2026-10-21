@@ -1,0 +1,7 @@
+{
+  "id": "e_exercise",
+  "display_name": "Did you engage in any exercise-based activities today (including sports, gym, cycling, etc.)?",
+  "description": "",
+  "type": "choices",
+  "domain": "yes_1_no_0"
+}

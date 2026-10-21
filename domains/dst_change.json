@@ -1,0 +1,18 @@
+[
+  {
+    "value": "1",
+    "display_name": "spring forward (standard to DST)",
+    "description": ""
+  },
+  {
+    "value": "-1",
+    "display_name": "fall back (DST to standard)",
+    "description": "",
+    "missing": true
+  },
+  {
+    "value": "0",
+    "display_name": "no change",
+    "description": ""
+  }
+]

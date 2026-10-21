@@ -1,0 +1,7 @@
+{
+  "id": "actigraphy_duration",
+  "display_name": "Number of minutes from sleep start to sleep end",
+  "description": "",
+  "type": "numeric",
+  "units": "minutes (min)"
+}

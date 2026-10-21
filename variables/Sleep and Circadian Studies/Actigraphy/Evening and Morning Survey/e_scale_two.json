@@ -1,0 +1,6 @@
+{
+  "id": "e_scale_two",
+  "display_name": "Indicate how you feel right now. Sad = 0, Happy = 100  (VAS)",
+  "description": "",
+  "type": "integer"
+}

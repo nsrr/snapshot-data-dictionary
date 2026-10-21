@@ -1,0 +1,7 @@
+{
+  "id": "lxmin",
+  "display_name": "Lowest light measurement ",
+  "description": "",
+  "type": "integer",
+  "units": "lux"
+}

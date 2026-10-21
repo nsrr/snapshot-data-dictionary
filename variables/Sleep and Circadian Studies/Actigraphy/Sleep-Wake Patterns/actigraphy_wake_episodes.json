@@ -1,0 +1,7 @@
+{
+  "id": "actigraphy_wake_episodes",
+  "display_name": "Number of wake episodes",
+  "description": "",
+  "type": "numeric",
+  "units": "number of events"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "actigraphy_longest_wake_episodes",
+  "display_name": "Duration of longest wake episode",
+  "description": "",
+  "type": "integer",
+  "units": "minutes (min)"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "e_academic",
+  "display_name": "Did you attend any academic activities today (including classes, e-classes, sections, seminars, labs, study groups)?    ",
+  "description": "",
+  "type": "choices",
+  "domain": "yes_1_no_0"
+}

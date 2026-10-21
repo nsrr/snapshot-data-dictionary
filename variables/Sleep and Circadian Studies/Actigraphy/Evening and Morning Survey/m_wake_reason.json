@@ -1,0 +1,7 @@
+{
+  "id": "m_wake_reason",
+  "display_name": "How did you finally wake up?",
+  "description": "",
+  "type": "choices",
+  "domain": "wake"
+}

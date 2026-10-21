@@ -1,8 +1,10 @@
 slug: snapshot
 visit: visit
 charts:
-- chart: gender
-  title: Gender
+- chart: sex
+  title: Sex
+- chart: race
+  title: Race
 webservers:
   - name: production
     url: https://sleepdata.org

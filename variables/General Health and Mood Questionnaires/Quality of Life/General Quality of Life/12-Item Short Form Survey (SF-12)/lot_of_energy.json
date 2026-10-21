@@ -1,0 +1,7 @@
+{
+  "id": "lot_of_energy",
+  "display_name": "How much of the time during the past 4 weeks...    b) Did you have a lot of energy?  ",
+  "description": "",
+  "type": "choices",
+  "domain": "time_6"
+}

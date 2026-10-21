@@ -1,0 +1,7 @@
+{
+  "id": "lxmean",
+  "display_name": "Mean light measurement",
+  "description": "",
+  "type": "numeric",
+  "units": "lux"
+}

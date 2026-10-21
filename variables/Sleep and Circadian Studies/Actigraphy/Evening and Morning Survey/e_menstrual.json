@@ -1,0 +1,7 @@
+{
+  "id": "e_menstrual",
+  "display_name": "Did you have menstrual-related bleeding today? ",
+  "description": "",
+  "type": "choices",
+  "domain": "yes_1_no_0"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "actigraphy_wake_minutes",
+  "display_name": "Duration of wake ",
+  "description": "",
+  "type": "numeric",
+  "units": "minutes (min)"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "m_first_event_none",
+  "display_name": "Do you have a first scheduled academic or extracurricular event today, if any?",
+  "description": "",
+  "type": "choices",
+  "domain": "event"
+}

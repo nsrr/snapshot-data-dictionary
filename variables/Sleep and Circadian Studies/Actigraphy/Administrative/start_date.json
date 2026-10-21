@@ -1,0 +1,7 @@
+{
+  "id": "start_date",
+  "display_name": "Start sleep date",
+  "description": "",
+  "type": "time",
+  "units": "yyyy-mm-dd"
+}

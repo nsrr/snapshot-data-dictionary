@@ -1,0 +1,7 @@
+{
+  "id": "limit_moderate_activities",
+  "display_name": "The following questions are about activities you might do during a typical day. Does your health now limit you in these activities?",
+  "description": "If so, how much?    a) Moderate activities, such as moving a table, pushing a vacuum cleaner, bowling, or playing golf",
+  "type": "choices",
+  "domain": "limit_moderate_activities"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "sex",
+  "display_name": "Please indicate your gender.",
+  "description": "",
+  "type": "choices",
+  "domain": "sex"
+}

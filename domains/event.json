@@ -1,0 +1,12 @@
+[
+  {
+    "value": "0",
+    "display_name": "had a first event",
+    "description": ""
+  },
+  {
+    "value": "1",
+    "display_name": "No first event =1, 0=had a first event",
+    "description": ""
+  }
+]

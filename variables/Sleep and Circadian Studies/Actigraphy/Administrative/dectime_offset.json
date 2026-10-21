@@ -1,0 +1,6 @@
+{
+  "id": "dectime_offset",
+  "display_name": "End sleep time changed to decimal format",
+  "description": "",
+  "type": "numeric"
+}

@@ -1,0 +1,6 @@
+{
+  "id": "gpa",
+  "display_name": "What is your GPA for the last semester?  5-point scale.",
+  "description": "",
+  "type": "numeric"
+}

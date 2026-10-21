@@ -1,0 +1,7 @@
+{
+  "id": "height_ft",
+  "display_name": "What is your height?  Feet",
+  "description": "",
+  "type": "integer",
+  "units": "feet (ft)"
+}

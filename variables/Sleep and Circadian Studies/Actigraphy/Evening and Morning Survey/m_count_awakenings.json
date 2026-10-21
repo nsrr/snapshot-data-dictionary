@@ -1,0 +1,7 @@
+{
+  "id": "m_count_awakenings",
+  "display_name": "How many times did you awaken?",
+  "description": "",
+  "type": "integer",
+  "units": "number of events"
+}

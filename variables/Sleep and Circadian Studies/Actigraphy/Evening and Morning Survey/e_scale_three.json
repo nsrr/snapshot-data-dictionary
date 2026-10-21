@@ -1,0 +1,6 @@
+{
+  "id": "e_scale_three",
+  "display_name": "Indicate how you feel right now. Sluggish = 0, Energetic = 100  (VAS)",
+  "description": "",
+  "type": "integer"
+}

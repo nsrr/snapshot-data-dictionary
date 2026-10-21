@@ -1,0 +1,6 @@
+{
+  "id": "e_extracurricular_three_duration",
+  "display_name": "Duration of third extracurricular activity",
+  "description": "",
+  "type": "integer"
+}

@@ -1,0 +1,7 @@
+{
+  "id": "pain_interfere_work",
+  "display_name": "During the past 4 weeks, how much did pain interfere with your normal work (including both work outside the home and housework)? ",
+  "description": "",
+  "type": "choices",
+  "domain": "pain_interfere_work"
+}

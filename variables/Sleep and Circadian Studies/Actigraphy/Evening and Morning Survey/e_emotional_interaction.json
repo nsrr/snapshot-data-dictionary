@@ -1,0 +1,6 @@
+{
+  "id": "e_emotional_interaction",
+  "display_name": "In addition, did you have an emotionally charged interaction with someone today? 4=No, 1=Yes, a memorable positive interaction, 2=Yes, a somewhat negative interaction, 3=Yes, and it was very negative",
+  "description": "",
+  "type": "string"
+}
