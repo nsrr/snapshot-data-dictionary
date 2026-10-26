@@ -3,5 +3,8 @@
   "display_name": "Start sleep time",
   "description": "",
   "type": "time",
-  "units": "HH:MM:SS"
+  "units": "HH:MM:SS",
+  "labels": [
+    "sleep_timing"
+  ]
 }

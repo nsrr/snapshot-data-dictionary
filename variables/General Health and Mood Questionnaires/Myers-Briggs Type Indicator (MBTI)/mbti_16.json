@@ -3,5 +3,8 @@
   "display_name": "16. In doing ordinary things are you more likely to: (Do it the usual way, Do it your own way)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_16"
+  "domain": "mbti_16",
+  "labels": [
+    "mbti"
+  ]
 }

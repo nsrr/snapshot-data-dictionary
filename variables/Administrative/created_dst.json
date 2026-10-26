@@ -2,6 +2,6 @@
   "id": "created_dst",
   "display_name": "Daylight saving time status when weekly questionnaire was created",
   "description": "US DST rules applied to the real created_at before shifting",
-  "type": "integer",
+  "type": "choices",
   "domain": "dst"
 }

@@ -3,5 +3,8 @@
   "display_name": "12. In approaching others is your inclination to be somewhat: (Objective, Personal)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_12"
+  "domain": "mbti_12",
+  "labels": [
+    "mbti"
+  ]
 }

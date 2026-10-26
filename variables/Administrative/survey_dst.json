@@ -2,6 +2,6 @@
   "id": "survey_dst",
   "display_name": "Daylight saving time status at survey timestamp",
   "description": "US DST rules (starts 2nd Sunday of March, 2 am; ends 1st Sunday of November, 2 am) applied to the real survey_timestamp before shifting",
-  "type": "integer",
+  "type": "choices",
   "domain": "dst"
 }

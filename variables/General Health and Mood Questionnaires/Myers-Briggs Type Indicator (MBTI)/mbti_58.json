@@ -3,5 +3,8 @@
   "display_name": "58. Do you prize more in yourself: (a strong sense of reality, a vivid imagination)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_58"
+  "domain": "mbti_58",
+  "labels": [
+    "mbti"
+  ]
 }

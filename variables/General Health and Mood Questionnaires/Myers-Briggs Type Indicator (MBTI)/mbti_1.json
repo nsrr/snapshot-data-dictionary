@@ -3,5 +3,8 @@
   "display_name": "1. At a party do you: (Interact with many, including strangers, Interact with a few, known to you)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_1"
+  "domain": "mbti_1",
+  "labels": [
+    "mbti"
+  ]
 }

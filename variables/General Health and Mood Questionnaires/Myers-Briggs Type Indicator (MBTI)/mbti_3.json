@@ -3,5 +3,8 @@
   "display_name": "3. Is it worse to: (Have your 'head in the clouds',  Be 'in a rut')",
   "description": "",
   "type": "choices",
-  "domain": "mbti_3"
+  "domain": "mbti_3",
+  "labels": [
+    "mbti"
+  ]
 }

@@ -3,5 +3,8 @@
   "display_name": "37. Are you more frequently: (a practical sort of person, a fanciful sort of person)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_37"
+  "domain": "mbti_37",
+  "labels": [
+    "mbti"
+  ]
 }

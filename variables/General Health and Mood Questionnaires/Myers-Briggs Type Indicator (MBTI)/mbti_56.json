@@ -3,5 +3,8 @@
   "display_name": "56. In relationships should most things be: (re-negotiable, random and circumstantial)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_56"
+  "domain": "mbti_56",
+  "labels": [
+    "mbti"
+  ]
 }

@@ -3,5 +3,7 @@
   "display_name": "Calculated - The dim-light melatonin onset (DLMO) was calculated, from saliva samples,  as the linear interpolated point in time at which salivary melatonin levels crossed a 5 pg/ml threshold.",
   "description": "",
   "type": "numeric",
-  "calculation": "calculated"
+  "labels": [
+    "dlmo"
+  ]
 }

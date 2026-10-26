@@ -3,5 +3,8 @@
   "display_name": "4. Are you more impressed by:( Principles, Emotions)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_4"
+  "domain": "mbti_4",
+  "labels": [
+    "mbti"
+  ]
 }

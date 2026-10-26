@@ -3,5 +3,8 @@
   "display_name": "46. Which is more of a compliment: ('There is a very logical person.', 'There is a very sentimental person.')",
   "description": "",
   "type": "choices",
-  "domain": "mbti_46"
+  "domain": "mbti_46",
+  "labels": [
+    "mbti"
+  ]
 }

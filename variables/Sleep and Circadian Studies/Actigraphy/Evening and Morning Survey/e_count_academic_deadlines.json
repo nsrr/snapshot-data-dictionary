@@ -2,5 +2,6 @@
   "id": "e_count_academic_deadlines",
   "display_name": "How many academic deadlines do you have? (Question added 2017)",
   "description": "",
-  "type": "integer"
+  "type": "integer",
+  "units": "number of servings per day"
 }

@@ -1,6 +1,7 @@
 {
   "id": "age",
-  "display_name": "Subject's age",
+  "display_name": "Age: Subject's age",
   "description": "",
-  "type": "integer"
+  "type": "integer",
+  "units": "years"
 }

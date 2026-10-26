@@ -3,5 +3,8 @@
   "display_name": "30. Common sense is: (rarely questionable, frequently questionable)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_30"
+  "domain": "mbti_30",
+  "labels": [
+    "mbti"
+  ]
 }

@@ -3,5 +3,8 @@
   "display_name": "If yes, what is the latest hour you consumed caffeine?",
   "description": "",
   "type": "time",
-  "units": "yyyy-mm-dd HH:MM:SS"
+  "units": "yyyy-mm-dd HH:MM:SS",
+  "labels": [
+    "sleep_hygiene"
+  ]
 }

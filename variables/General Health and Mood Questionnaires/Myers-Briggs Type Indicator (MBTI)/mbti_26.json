@@ -3,5 +3,8 @@
   "display_name": "26. Is it worse to be: (unjust, merciless)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_26"
+  "domain": "mbti_26",
+  "labels": [
+    "mbti"
+  ]
 }

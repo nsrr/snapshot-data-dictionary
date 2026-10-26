@@ -3,5 +3,8 @@
   "display_name": "42. Do you tend to look for: (the orderly, whatever turns up)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_42"
+  "domain": "mbti_42",
+  "labels": [
+    "mbti"
+  ]
 }

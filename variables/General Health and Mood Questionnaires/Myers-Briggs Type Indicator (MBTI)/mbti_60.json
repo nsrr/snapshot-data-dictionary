@@ -3,5 +3,8 @@
   "display_name": "60. Which seems the greater error: (to be too passionate, to be too objective)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_60"
+  "domain": "mbti_60",
+  "labels": [
+    "mbti"
+  ]
 }

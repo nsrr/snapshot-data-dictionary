@@ -3,5 +3,8 @@
   "display_name": "24. Are visionaries: (somewhat annoying, rather fascinating)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_24"
+  "domain": "mbti_24",
+  "labels": [
+    "mbti"
+  ]
 }

@@ -3,5 +3,8 @@
   "display_name": "59. Are you drawn more to: (fundamentals, overtones)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_59"
+  "domain": "mbti_59",
+  "labels": [
+    "mbti"
+  ]
 }

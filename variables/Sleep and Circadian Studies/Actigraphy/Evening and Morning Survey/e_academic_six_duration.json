@@ -1,6 +1,6 @@
 {
   "id": "e_academic_six_duration",
   "display_name": "Duration of sixth academic activity",
-  "description": "",
+  "description": "*NSRR addition: Variable units are ambiguous. Most subjects likely provided responses in minutes, however others provided responses in hours.*",
   "type": "integer"
 }

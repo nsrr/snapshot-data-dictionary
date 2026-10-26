@@ -3,5 +3,8 @@
   "display_name": "13. Are you more:(Punctual, Leisurely)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_13"
+  "domain": "mbti_13",
+  "labels": [
+    "mbti"
+  ]
 }

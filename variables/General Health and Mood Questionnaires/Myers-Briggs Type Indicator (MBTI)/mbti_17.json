@@ -3,5 +3,8 @@
   "display_name": "17. Writers should: ('Say what they mean and mean what they say', Express things more by use of analogy)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_17"
+  "domain": "mbti_17",
+  "labels": [
+    "mbti"
+  ]
 }

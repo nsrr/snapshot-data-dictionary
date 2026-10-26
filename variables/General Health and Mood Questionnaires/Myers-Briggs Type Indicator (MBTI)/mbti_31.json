@@ -3,5 +3,8 @@
   "display_name": "31. Children often do not: (make themselves useful enough, exercise their fantasy enough)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_31"
+  "domain": "mbti_31",
+  "labels": [
+    "mbti"
+  ]
 }

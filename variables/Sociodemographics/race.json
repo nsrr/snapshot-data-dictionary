@@ -1,6 +1,6 @@
 {
   "id": "race",
-  "display_name": "African Amer, Asian, More than one, Other, UNK, White",
+  "display_name": "Race: African Amer, Asian, More than one, Other, UNK, White",
   "description": "",
   "type": "choices",
   "domain": "race"

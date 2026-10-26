@@ -1,6 +1,9 @@
 {
   "id": "m_awakening_four_duration",
   "display_name": "Duration of fourth awakening",
-  "description": "",
-  "type": "integer"
+  "description": "*NSRR addition: Variable units are ambiguous. Most subjects likely provided responses in minutes, however others provided responses in hours.*",
+  "type": "integer",
+  "labels": [
+    "durwk_f3"
+  ]
 }

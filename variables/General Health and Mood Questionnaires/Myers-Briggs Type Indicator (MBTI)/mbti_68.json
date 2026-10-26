@@ -3,5 +3,8 @@
   "display_name": "68. Which is the greater fault: (being indiscriminate, being critical)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_68"
+  "domain": "mbti_68",
+  "labels": [
+    "mbti"
+  ]
 }

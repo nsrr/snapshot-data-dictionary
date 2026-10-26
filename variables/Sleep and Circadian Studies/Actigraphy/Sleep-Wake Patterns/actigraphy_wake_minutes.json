@@ -3,5 +3,9 @@
   "display_name": "Duration of wake ",
   "description": "",
   "type": "numeric",
-  "units": "minutes (min)"
+  "units": "minutes (min)",
+  "labels": [
+    "ttldurwk_f2",
+    "sleep_duration"
+  ]
 }

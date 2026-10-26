@@ -1,7 +1,10 @@
 {
   "id": "physical_health_other_activities",
   "display_name": "During the past 4 weeks, how much of the time have you had any of the following problems with your work or other regular daily activities as a result of your physical health?",
-  "description": "b) Were limited in the kind of work or other activities",
+  "description": "b) Were limited in the kind of work or other activities [Rand Health Care. 12-Item Short Form Survey (SF-12)](https://www.rand.org/health-care/surveys_tools/mos/12-item-short-form.html)<br><br>[Search for all SF-12 variables within this dataset](https://sleepdata.org/datasets/hchs/variables?search=mossf12)",
   "type": "choices",
-  "domain": "time_5"
+  "domain": "time_5",
+  "labels": [
+    "mossf12"
+  ]
 }

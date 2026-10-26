@@ -3,5 +3,8 @@
   "display_name": "61. Do you see yourself as basically: (hard-headed, soft-hearted)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_61"
+  "domain": "mbti_61",
+  "labels": [
+    "mbti"
+  ]
 }

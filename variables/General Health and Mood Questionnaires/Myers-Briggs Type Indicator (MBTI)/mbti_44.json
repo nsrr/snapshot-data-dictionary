@@ -3,5 +3,8 @@
   "display_name": "44. Do you go more by: (facts, principles)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_44"
+  "domain": "mbti_44",
+  "labels": [
+    "mbti"
+  ]
 }

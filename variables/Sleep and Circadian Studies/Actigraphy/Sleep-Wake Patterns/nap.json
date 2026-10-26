@@ -3,5 +3,8 @@
   "display_name": "Was this sleep period a nap?",
   "description": "",
   "type": "choices",
-  "domain": "no_1_yes_2"
+  "domain": "no_1_yes_2",
+  "labels": [
+    "nap"
+  ]
 }

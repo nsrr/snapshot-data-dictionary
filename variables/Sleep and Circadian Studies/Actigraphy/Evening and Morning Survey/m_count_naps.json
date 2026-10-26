@@ -3,5 +3,8 @@
   "display_name": "How many times did you nap?",
   "description": "",
   "type": "integer",
-  "units": "number of events"
+  "units": "number of events",
+  "labels": [
+    "numnp_f3"
+  ]
 }

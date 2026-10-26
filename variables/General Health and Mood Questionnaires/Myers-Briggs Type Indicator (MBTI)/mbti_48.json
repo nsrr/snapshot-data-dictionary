@@ -3,5 +3,8 @@
   "display_name": "48. Do you more often prefer the (final and unalterable statement, tentative and preliminary statement)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_48"
+  "domain": "mbti_48",
+  "labels": [
+    "mbti"
+  ]
 }

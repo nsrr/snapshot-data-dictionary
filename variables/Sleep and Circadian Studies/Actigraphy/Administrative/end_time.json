@@ -3,5 +3,8 @@
   "display_name": "End sleep time",
   "description": "",
   "type": "time",
-  "units": "HH:MM:SS"
+  "units": "HH:MM:SS",
+  "labels": [
+    "sleep_timing"
+  ]
 }

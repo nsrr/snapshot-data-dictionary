@@ -3,5 +3,8 @@
   "display_name": "In the last week, how often have you felt that you were unable to control the important things in your life?",
   "description": "",
   "type": "choices",
-  "domain": "weekly"
+  "domain": "weekly",
+  "labels": [
+    "pss"
+  ]
 }

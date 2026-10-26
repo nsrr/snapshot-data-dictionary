@@ -3,5 +3,8 @@
   "display_name": "55. Is it preferable mostly to: (make sure things are arranged, just let things happen)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_55"
+  "domain": "mbti_55",
+  "labels": [
+    "mbti"
+  ]
 }

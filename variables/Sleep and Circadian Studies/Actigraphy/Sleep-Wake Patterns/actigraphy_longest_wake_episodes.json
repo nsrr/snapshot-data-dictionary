@@ -3,5 +3,9 @@
   "display_name": "Duration of longest wake episode",
   "description": "",
   "type": "integer",
-  "units": "minutes (min)"
+  "units": "minutes (min)",
+  "labels": [
+    "maxdurwk_f2",
+    "sleep_efficiency"
+  ]
 }

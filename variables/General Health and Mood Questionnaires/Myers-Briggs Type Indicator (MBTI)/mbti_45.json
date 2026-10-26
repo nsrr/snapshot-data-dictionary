@@ -3,5 +3,8 @@
   "display_name": "45. Are you more interested in: (production and distribution, design and research)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_45"
+  "domain": "mbti_45",
+  "labels": [
+    "mbti"
+  ]
 }

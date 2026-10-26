@@ -3,5 +3,9 @@
   "display_name": "Mean duration of wake episodes",
   "description": "",
   "type": "numeric",
-  "units": "minutes (min)"
+  "units": "minutes (min)",
+  "labels": [
+    "avgdurwk_f2",
+    "sleep_efficiency"
+  ]
 }

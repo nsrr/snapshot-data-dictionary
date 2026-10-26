@@ -3,5 +3,8 @@
   "display_name": "In the last week, how often have you felt difficulties were piling up so high that you could not overcome them?",
   "description": "",
   "type": "choices",
-  "domain": "weekly"
+  "domain": "weekly",
+  "labels": [
+    "pss"
+  ]
 }

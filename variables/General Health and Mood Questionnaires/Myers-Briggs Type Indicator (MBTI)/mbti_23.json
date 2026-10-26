@@ -3,5 +3,8 @@
   "display_name": "23. Facts: ('Speak for themselves', Illustrate principles)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_23"
+  "domain": "mbti_23",
+  "labels": [
+    "mbti"
+  ]
 }

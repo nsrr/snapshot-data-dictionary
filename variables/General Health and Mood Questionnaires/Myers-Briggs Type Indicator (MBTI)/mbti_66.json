@@ -3,5 +3,8 @@
   "display_name": "66. Is it harder for you to: (identify with others, utilize others)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_66"
+  "domain": "mbti_66",
+  "labels": [
+    "mbti"
+  ]
 }

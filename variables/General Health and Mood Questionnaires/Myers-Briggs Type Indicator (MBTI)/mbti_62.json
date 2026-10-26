@@ -3,5 +3,8 @@
   "display_name": "62. Which situation appeals to you more: (the structured and scheduled, the unstructured and unscheduled)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_62"
+  "domain": "mbti_62",
+  "labels": [
+    "mbti"
+  ]
 }

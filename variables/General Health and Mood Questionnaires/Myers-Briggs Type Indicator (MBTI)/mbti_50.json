@@ -3,5 +3,8 @@
   "display_name": "50. Do you: (speak easily and at length with strangers, find little to say to strangers)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_50"
+  "domain": "mbti_50",
+  "labels": [
+    "mbti"
+  ]
 }

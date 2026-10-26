@@ -3,5 +3,9 @@
   "display_name": "Duration of sleep ",
   "description": "",
   "type": "numeric",
-  "units": "minutes (min)"
+  "units": "minutes (min)",
+  "labels": [
+    "ttldursp_f2",
+    "sleep_duration"
+  ]
 }

@@ -3,5 +3,8 @@
   "display_name": "38. Are you more likely to: (see how others are useful, see how others see)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_38"
+  "domain": "mbti_38",
+  "labels": [
+    "mbti"
+  ]
 }

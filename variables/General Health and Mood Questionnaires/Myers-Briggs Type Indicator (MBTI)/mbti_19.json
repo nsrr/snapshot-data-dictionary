@@ -3,5 +3,8 @@
   "display_name": "19. Are you more comfortable in making: (Logical judgments, Value judgments)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_19"
+  "domain": "mbti_19",
+  "labels": [
+    "mbti"
+  ]
 }

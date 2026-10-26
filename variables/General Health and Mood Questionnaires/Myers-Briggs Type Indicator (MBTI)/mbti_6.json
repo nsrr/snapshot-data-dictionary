@@ -3,5 +3,8 @@
   "display_name": "6. Do you prefer to work: (To deadlines, Just 'whenever')",
   "description": "",
   "type": "choices",
-  "domain": "mbti_6"
+  "domain": "mbti_6",
+  "labels": [
+    "mbti"
+  ]
 }

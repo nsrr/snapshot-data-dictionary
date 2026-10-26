@@ -3,5 +3,8 @@
   "display_name": "14. Does it bother you more having things:(Incomplete, Completed)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_14"
+  "domain": "mbti_14",
+  "labels": [
+    "mbti"
+  ]
 }

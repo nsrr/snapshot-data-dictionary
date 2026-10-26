@@ -3,5 +3,8 @@
   "display_name": "54. Are you inclined more to be: (fair-minded, sympathetic)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_54"
+  "domain": "mbti_54",
+  "labels": [
+    "mbti"
+  ]
 }

@@ -3,5 +3,8 @@
   "display_name": "How long did it take you to fall asleep?",
   "description": "",
   "type": "integer",
-  "units": "minutes (min)"
+  "units": "minutes (min)",
+  "labels": [
+    "sleep_latency"
+  ]
 }

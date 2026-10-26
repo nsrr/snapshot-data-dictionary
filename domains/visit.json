@@ -6,6 +6,21 @@
   },
   {
     "value": "2",
+    "display_name": "weekly questionnaire",
+    "description": ""
+  },
+  {
+    "value": "3",
+    "display_name": "actigraphy",
+    "description": ""
+  },
+  {
+    "value": "4",
+    "display_name": "ediary",
+    "description": ""
+  },
+  {
+    "value": "5",
     "display_name": "follow-up visit",
     "description": ""
   }

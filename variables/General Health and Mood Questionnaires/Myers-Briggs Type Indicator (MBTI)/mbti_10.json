@@ -3,5 +3,8 @@
   "display_name": "10. Are you more interested in:(What is actual, What is possible)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_10"
+  "domain": "mbti_10",
+  "labels": [
+    "mbti"
+  ]
 }

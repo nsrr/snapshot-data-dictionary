@@ -3,5 +3,8 @@
   "display_name": "Number of wake episodes of at least 5 minutes.",
   "description": "",
   "type": "numeric",
-  "units": "number of events"
+  "units": "number of events",
+  "labels": [
+    "sleep_efficiency"
+  ]
 }

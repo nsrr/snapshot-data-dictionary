@@ -3,5 +3,8 @@
   "display_name": "64. Are you more inclined to be: (easy to approach, somewhat reserved)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_64"
+  "domain": "mbti_64",
+  "labels": [
+    "mbti"
+  ]
 }

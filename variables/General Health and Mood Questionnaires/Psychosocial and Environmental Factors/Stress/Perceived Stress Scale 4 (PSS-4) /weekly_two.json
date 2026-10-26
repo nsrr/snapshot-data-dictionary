@@ -3,5 +3,8 @@
   "display_name": "In the last week, how often have you felt confident about your ability to handle your personal problems?",
   "description": "",
   "type": "choices",
-  "domain": "weekly_re"
+  "domain": "weekly_re",
+  "labels": [
+    "pss"
+  ]
 }

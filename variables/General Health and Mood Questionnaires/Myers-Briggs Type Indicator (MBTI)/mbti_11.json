@@ -3,5 +3,8 @@
   "display_name": "11. In judging others are you more swayed by:(Laws than circumstances, Circumstances than laws)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_11"
+  "domain": "mbti_11",
+  "labels": [
+    "mbti"
+  ]
 }

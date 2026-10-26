@@ -3,5 +3,10 @@
   "display_name": "Wake after sleep onset - same as duration of wake variable",
   "description": "",
   "type": "numeric",
-  "units": "minutes (min)"
+  "units": "minutes (min)",
+  "labels": [
+    "ttldurws_f2",
+    "sleep_duration",
+    "waso"
+  ]
 }

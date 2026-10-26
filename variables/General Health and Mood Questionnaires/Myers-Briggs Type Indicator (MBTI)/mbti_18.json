@@ -3,5 +3,8 @@
   "display_name": "18. Which appeals to you more: (Consistency of thought. Harmonious human relationships)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_18"
+  "domain": "mbti_18",
+  "labels": [
+    "mbti"
+  ]
 }

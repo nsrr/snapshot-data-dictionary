@@ -3,5 +3,5 @@
   "display_name": "Date/time when the entry was created",
   "description": "",
   "type": "time",
-  "units": "yyyy-mm-dd"
+  "units": "yyyy-mm-dd HH:MM:SS"
 }

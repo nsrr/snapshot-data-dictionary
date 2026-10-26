@@ -3,5 +3,8 @@
   "display_name": "Did you nap yesterday?",
   "description": "",
   "type": "choices",
-  "domain": "yes_1_no_0"
+  "domain": "yes_1_no_0",
+  "labels": [
+    "nap"
+  ]
 }

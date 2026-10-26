@@ -1,6 +1,10 @@
 {
   "id": "e_caffeine",
   "display_name": "How many total servings of caffeine did you have today? [See online guide for the definition of a 'serving']",
-  "description": "",
-  "type": "integer"
+  "description": "Please refer to this guide to help calculate servings:\nCola 12 oz (1 can) - 1/2 serving\nTea (1 cup) - 1/2 serving\nHome brew coffee 8 oz (1 cup) - 1 serving\nEnergy drink 16 oz (1 large can) - 2 servings\n5 hour energy - 2 servings\nLarge coffee 16 oz (large or grande) - 2 servings\nCaffeine pill - 100mg - 1 serving\nCaffeine pill - 200mg - 2 servings",
+  "type": "integer",
+  "units": "number of servings per day",
+  "labels": [
+    "sleep_hygiene"
+  ]
 }

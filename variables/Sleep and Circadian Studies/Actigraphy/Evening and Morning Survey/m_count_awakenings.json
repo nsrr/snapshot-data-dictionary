@@ -3,5 +3,8 @@
   "display_name": "How many times did you awaken?",
   "description": "",
   "type": "integer",
-  "units": "number of events"
+  "units": "number of events",
+  "labels": [
+    "numwk_f3"
+  ]
 }

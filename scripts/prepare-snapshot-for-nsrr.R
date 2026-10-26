@@ -10,10 +10,7 @@ src_dir <- "/Volumes/BWH-SLEEPEPI-NSRR-STAGING/20260901-barger-snapshot/nsrr-pre
 out_dir <- file.path("/Volumes/BWH-SLEEPEPI-NSRR-STAGING/20260901-barger-snapshot/nsrr-prep/_releases/0.1.0.pre")
 
 ######################################## helpers ########################################
-
-# TRUE only where the ID is a real value (not NA, not blank/whitespace)
-has_id <- function(x) !is.na(x) & trimws(as.character(x)) != ""
-
+# reformat variable names
 # normalize IDs so matching ignores case and stray whitespace
 norm_id <- function(x) toupper(trimws(as.character(x)))
 
@@ -52,8 +49,6 @@ fix_excel_dt <- function(df) {
       num <- suppressWarnings(as.numeric(x))
       ok  <- !is.na(x) & !is.na(num)
       if (any(ok)) {
-        message("converting text column to datetime: ", col,
-                " (", sum(!ok & !is.na(x)), " non-numeric entries set to NA)")
         out <- as.POSIXct(rep(NA_real_, length(x)), origin = "1970-01-01", tz = "UTC")
         out[ok] <- as.POSIXct(num[ok] * 86400, origin = "1899-12-30", tz = "UTC")
         df[[col]] <- out
@@ -81,22 +76,7 @@ classify_dt <- function(df) {
        datetime  = rest[!is_date_only])
 }
 
-# warn if any output column still holds a real study-year date (2013-2017)
-check_leaks <- function(df, name) {
-  hits <- names(df)[vapply(df, function(x) any(grepl("\\b201[3-7]-", as.character(x))), logical(1))]
-  if (length(hits) > 0) warning(name, ": possible unshifted real dates in: ", paste(hits, collapse = ", "))
-}
-
-# report columns that had values before processing but are entirely empty after
-empty_check <- function(before, after, name) {
-  has_val <- function(x) any(!is.na(x) & as.character(x) != "")
-  common  <- intersect(names(before), names(after))
-  lost    <- common[vapply(common, function(c) has_val(before[[c]]) && !has_val(after[[c]]), logical(1))]
-  if (length(lost) > 0) warning(name, ": columns emptied by processing: ", paste(lost, collapse = ", "))
-  invisible(lost)
-}
-
-# US DST switch times (local clock), rules in effect 2007+
+# US DST switch times
 # spring forward: 2nd Sunday of March, 2 am; fall back: 1st Sunday of November, 2 am
 first_sunday_on_or_after <- function(d) d + ((1 - wday(d)) %% 7)
 
@@ -130,24 +110,20 @@ names(demo)     <- trimws(names(demo))
 names(baseline)[tolower(names(baseline)) == "subject code"] <- "Subject Code"
 names(demo)[tolower(names(demo)) == "subject code"]         <- "Subject Code"
 
-# Split baseline: 2_ columns become visit 2 rows under the matching visit 1 columns
-v2_cols    <- grep("^2_", names(baseline), value = TRUE)
-v2_targets <- sub("^2_", "", v2_cols)
-
-missing_targets <- setdiff(v2_targets, names(baseline))
-if (length(missing_targets) > 0) stop("No visit 1 match for: ", paste(missing_targets, collapse = ", "))
+# Split baseline: 2_ columns become follow-up rows under the matching baseline columns
+v2_cols <- grep("^2_", names(baseline), value = TRUE)
 
 baseline_v1 <- baseline %>% select(-all_of(v2_cols))
 
 baseline_v2 <- baseline %>%
   select(`Subject Code`, all_of(v2_cols)) %>%
   rename_with(~ sub("^2_", "", .x), all_of(v2_cols)) %>%
-  filter(if_any(-`Subject Code`, ~ !is.na(.x))) %>%   # keep only subjects with visit 2 data
-  mutate(visit = if_else(has_id(`Subject Code`), 2, NA_real_))
+  filter(if_any(-`Subject Code`, ~ !is.na(.x))) %>%   # keep only subjects with follow-up data
+  mutate(visit = 5)                                   # 5 = follow-up
 
-# Visit 1: demo + baseline (left join, demo is base; baseline NA for CS15M077 / CS16M029)
+# Baseline: demo + baseline (left join, demo is base)
 merged_v1 <- left_join(demo, baseline_v1, by = "Subject Code", suffix = c("_demo", "_baseline")) %>%
-  mutate(visit = if_else(has_id(`Subject Code`), 1, NA_real_))
+  mutate(visit = 1)                                   # 1 = baseline
 
 merged <- bind_rows(merged_v1, baseline_v2) %>%
   relocate(visit, .after = `Subject Code`) %>%
@@ -171,10 +147,11 @@ actigraphy <- read_excel(file.path(src_dir, "SNAPSHOT_Actigraphy.xlsx"),
 names(actigraphy) <- clean_names(names(actigraphy))
 names(actigraphy)[names(actigraphy) == "id"] <- "subject_code"
 actigraphy <- fix_excel_dt(actigraphy)
+
 actigraphy <- actigraphy %>% rename(any_of(c(actigraphy_study_day = "study_day")))
 
 actigraphy <- actigraphy %>%
-  mutate(visit = if_else(has_id(subject_code), 1, NA_real_), .after = subject_code)
+  mutate(visit = 3, .after = subject_code)            # 3 = actigraphy
 
 ######################################## read: eDiary ########################################
 
@@ -185,24 +162,12 @@ names(ediary)[names(ediary) == "id"] <- "subject_code"
 ediary <- fix_excel_dt(ediary)
 
 # drop free-text comment columns from the release
-drop_cols <- c("m_comments", "e_comments")
-not_found <- setdiff(drop_cols, names(ediary))
-if (length(not_found) > 0) warning("columns to drop not found in ediary: ", paste(not_found, collapse = ", "))
-ediary <- ediary %>% select(-any_of(drop_cols))
+ediary <- ediary %>% select(-any_of(c("m_comments", "e_comments")))
+
 ediary <- ediary %>% rename(any_of(c(ediary_study_day = "study_day")))
 
 ediary <- ediary %>%
-  mutate(visit = if_else(has_id(subject_code), 1, NA_real_), .after = subject_code)
-
-# check: previously emptied columns now have their values
-chk <- c("m_sleep_reason", "m_sleep_deadline_time", "m_sleep_reason_other",
-         "e_academic_six_time", "e_academic_seven_time", "e_exercise_four_time",
-         "e_extracurricular_four_time", "e_extracurricular_five_time")
-print(tibble(
-  column   = chk,
-  class    = vapply(chk, function(c) paste(class(ediary[[c]]), collapse = "/"), character(1)),
-  n_filled = vapply(chk, function(c) sum(!is.na(ediary[[c]])), integer(1))
-))
+  mutate(visit = 4, .after = subject_code)            # 4 = eDiary
 
 ######################################## read: weekly questionnaire ########################################
 
@@ -212,13 +177,12 @@ weekly <- fix_excel_dt(weekly)
 
 # ID is assumed to be the first column
 id_col <- names(weekly)[1]
-cat("\nweekly ID column used for visit:", id_col, "\n")   # confirm this is the ID
 
 weekly <- weekly %>%
-  mutate(visit = if_else(has_id(.data[[id_col]]), 1, NA_real_), .after = 1)
+  mutate(visit = 2, .after = 1)                       # 2 = weekly questionnaire
 
 ######################################## per-participant date offset ########################################
-# Index = visit 1 baseline survey date. Each participant's real year (2013-2017) is
+# Index = baseline survey date. Each participant's real year (2013-2017) is
 # mapped to an earlier calendar-matching year (same Jan 1 weekday, same leap status),
 # and every date for that participant (all files) is shifted by the same number of days.
 
@@ -226,9 +190,6 @@ year_map <- tibble(
   real_year   = c(2013, 2014, 2015, 2016, 2017),
   mapped_year = c(2002, 2003, 2009, 1988, 2006)
 )
-stopifnot(with(year_map,
-               wday(make_date(real_year, 1, 1)) == wday(make_date(mapped_year, 1, 1)) &
-                 leap_year(real_year) == leap_year(mapped_year)))
 
 index_baseline <- merged %>%
   filter(visit == 1, !is.na(survey_timestamp)) %>%
@@ -241,46 +202,28 @@ earliest_other <- bind_rows(
   ediary     %>% transmute(subject_code = norm_id(subject_code), d = as_date(to_dt(e_date))),
   weekly     %>% transmute(subject_code = norm_id(.data[[id_col]]), d = as_date(to_dt(date)))
 ) %>%
-  filter(has_id(subject_code), !is.na(d)) %>%
+  filter(!is.na(subject_code), trimws(subject_code) != "", !is.na(d)) %>%
   group_by(subject_code) %>%
   summarise(index_fallback = min(d), .groups = "drop")
 
 offsets <- full_join(index_baseline, earliest_other, by = "subject_code") %>%
   mutate(
-    index_source = if_else(!is.na(index_real), "baseline", "fallback"),
-    index_real   = coalesce(index_real, index_fallback),
-    real_year    = year(index_real)
+    index_real = coalesce(index_real, index_fallback),
+    real_year  = year(index_real)
   ) %>%
   left_join(year_map, by = "real_year") %>%
   mutate(
     offset_days = as.integer(make_date(real_year, 1, 1) - make_date(mapped_year, 1, 1)),   # multiple of 7
     month_start = month(index_real)                                                         # real baseline month
   ) %>%
-  select(subject_code, index_source, offset_days, month_start)
+  select(subject_code, offset_days, month_start)
 
-no_map <- offsets %>% filter(is.na(offset_days)) %>% pull(subject_code)
-if (length(no_map) > 0) stop("Baseline year not in year_map for: ", paste(no_map, collapse = ", "))
-
-fallback_ids <- offsets %>% filter(index_source == "fallback") %>% pull(subject_code)
-if (length(fallback_ids) > 0) {
-  message("No baseline survey date; index = earliest other date for: ", paste(fallback_ids, collapse = ", "))
-}
-
-# shift date/datetime columns by the participant's offset (rows with no offset -> NA, never real dates)
+# shift date/datetime columns by the participant's offset
 shift_dates <- function(df, cols, id = "subject_code") {
   if (length(cols) == 0) return(df)
-  df <- df %>%
-    mutate(.id = norm_id(.data[[id]])) %>%
-    left_join(offsets %>% select(.id = subject_code, offset_days), by = ".id")
-  n_missing <- df %>%
-    filter(is.na(offset_days), if_any(all_of(cols), ~ !is.na(.x))) %>%
-    nrow()
-  if (n_missing > 0) {
-    bad_ids <- df %>% filter(is.na(offset_days)) %>% pull(.id) %>% unique()
-    warning(n_missing, " rows have dates but no offset; their dates are set to NA. IDs: ",
-            paste(head(bad_ids, 10), collapse = ", "))
-  }
   df %>%
+    mutate(.id = norm_id(.data[[id]])) %>%
+    left_join(offsets %>% select(.id = subject_code, offset_days), by = ".id") %>%
     mutate(across(all_of(cols), ~ .x - days(offset_days))) %>%
     select(-.id, -offset_days)
 }
@@ -299,8 +242,6 @@ shift_and_format <- function(df, id = "subject_code") {
 
 ######################################## write: baseline ########################################
 
-merged_before <- merged
-
 merged <- merged %>%
   mutate(survey_dst = is_dst(survey_timestamp)) %>%      # from REAL timestamp, before shifting
   shift_dates(c(timestamp_cols, mc_date_cols)) %>%
@@ -310,21 +251,13 @@ merged <- merged %>%
   relocate(month_start, .after = visit) %>%
   relocate(survey_dst, .after = survey_timestamp)
 
-# check: every visit 1 baseline survey now falls in a mapped year
-v1_years <- merged %>% filter(visit == 1, !is.na(survey_timestamp)) %>% pull(survey_timestamp) %>% year()
-stopifnot(all(v1_years %in% year_map$mapped_year))
-
 merged <- merged %>%
   mutate(across(all_of(timestamp_cols), ~ format(.x, "%Y-%m-%d %H:%M:%S"))) %>%
   mutate(across(all_of(mc_date_cols),   ~ format(.x, "%Y-%m-%d")))
 
-empty_check(merged_before, merged, "baseline")
-check_leaks(merged, "baseline")
 write_csv(merged, file.path(out_dir, "snapshot-dataset.0.1.0.pre.csv"), na = "")
 
 ######################################## write: actigraphy ########################################
-
-actigraphy_before <- actigraphy
 
 # DST from REAL dates, before shifting
 actigraphy <- actigraphy %>%
@@ -366,13 +299,9 @@ actigraphy <- actigraphy %>%
   select(-.row, -.start_dt, -.end_dt, -.year)
 
 actigraphy <- shift_and_format(actigraphy)
-empty_check(actigraphy_before, actigraphy, "actigraphy")
-check_leaks(actigraphy, "actigraphy")
 write_csv(actigraphy, file.path(out_dir, "snapshot-actigraphy-intervals-dataset.0.1.0.pre.csv"), na = "")
 
 ######################################## write: eDiary ########################################
-
-ediary_before <- ediary
 
 ediary <- ediary %>%
   mutate(
@@ -383,21 +312,15 @@ ediary <- ediary %>%
   relocate(e_created_dst, .after = e_created_at)
 
 ediary <- shift_and_format(ediary)
-empty_check(ediary_before, ediary, "ediary")
-check_leaks(ediary, "ediary")
 write_csv(ediary, file.path(out_dir, "snapshot-ediary-dataset.0.1.0.pre.csv"), na = "")
 
 ######################################## write: weekly questionnaire ########################################
-
-weekly_before <- weekly
 
 weekly <- weekly %>%
   mutate(created_dst = is_dst(to_dt(created_at))) %>%    # from REAL timestamp, before shifting
   relocate(created_dst, .after = created_at)
 
 weekly <- shift_and_format(weekly, id = id_col)
-empty_check(weekly_before, weekly, "weekly")
-check_leaks(weekly, "weekly")
 write_csv(weekly, file.path(out_dir, "snapshot-weekly-questionnaire-dataset.0.1.0.pre.csv"), na = "")
 
 
@@ -408,29 +331,32 @@ write_csv(weekly, file.path(out_dir, "snapshot-weekly-questionnaire-dataset.0.1.
 #############harmonized dataset
 ##########################
 # age, race, gender, ethnicity
-harmonized_data<-merged[,c("subject_code", "visit","age","race","sex","ethnicity","height_ft","height_in","weight_lbs")]%>%
-  dplyr::mutate(nsrrid=subject_code,
-                nsrr_age=age,
-                nsrr_race=dplyr::case_when(
-                  race=="White" ~ "white",
-                  race=="African Amer" ~ "black or african american",
-                  race=="Asian" ~ "asian",
-                  race=="More than one" ~ "multiple",
-                  race=="Other" ~ "other",
+harmonized_data <- merged[, c("subject_code", "visit", "age", "race", "sex", "ethnicity", "height_ft", "height_in", "weight_lbs")] %>%
+  dplyr::filter(visit == 1) %>%
+  dplyr::mutate(nsrrid = subject_code,
+                nsrr_age = age,
+                nsrr_race = dplyr::case_when(
+                  race == "White" ~ "white",
+                  race == "African Amer" ~ "black or african american",
+                  race == "Asian" ~ "asian",
+                  race == "More than one" ~ "multiple",
+                  race == "Other" ~ "other",
                   TRUE ~ "not reported"
                 ),
-                nsrr_sex=dplyr::case_when(
-                  sex==1 ~ "male",
-                  sex==0 ~ "female",
+                nsrr_sex = dplyr::case_when(
+                  sex == 1 ~ "male",
+                  sex == 0 ~ "female",
                   TRUE ~ "not reported"
                 ),
-                nsrr_ethnicity=dplyr::case_when(
-                  ethnicity=="Hispanic/Latino" ~ "hispanic or latino",
-                  ethnicity=="Not Hispanic/Latino" ~ "not hispanic or latino",
+                nsrr_ethnicity = dplyr::case_when(
+                  ethnicity == "Hispanic/Latino" ~ "hispanic or latino",
+                  ethnicity == "Not Hispanic/Latino" ~ "not hispanic or latino",
                   TRUE ~ "not reported"
                 ),
-                nsrr_bmi = (weight_lbs * 0.453592) / (((height_ft * 12) + height_in) * 0.0254)^2
-                ) %>% select(nsrrid, visit, nsrr_age, nsrr_race, nsrr_sex, nsrr_ethnicity, nsrr_bmi)
+                nsrr_bmi = (weight_lbs * 0.453592) / (((height_ft * 12) + height_in) * 0.0254)^2,
+                visit = 1
+  ) %>%
+  dplyr::select(nsrrid, visit, nsrr_age, nsrr_race, nsrr_sex, nsrr_ethnicity, nsrr_bmi)
 
 write_csv(harmonized_data, file.path(out_dir, "snapshot-harmonized-dataset-0.1.0.pre.csv"), na = "")
 

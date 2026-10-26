@@ -1,6 +1,6 @@
 {
   "id": "e_extracurricular_four_duration",
   "display_name": "Duration of fourth extracurricular activity",
-  "description": "",
+  "description": "*NSRR addition: Variable units are ambiguous. Most subjects likely provided responses in minutes, however others provided responses in hours.*",
   "type": "integer"
 }

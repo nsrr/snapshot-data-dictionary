@@ -1,6 +1,9 @@
 {
   "id": "dectime",
-  "display_name": "Start sleep time  changed to decimal format",
+  "display_name": "Start sleep time changed to decimal format",
   "description": "",
-  "type": "numeric"
+  "type": "numeric",
+  "labels": [
+    "sleep_timing"
+  ]
 }

@@ -3,5 +3,8 @@
   "display_name": "27. Should one usually let events occur: (by careful selection and choice, randomly and by chance)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_27"
+  "domain": "mbti_27",
+  "labels": [
+    "mbti"
+  ]
 }

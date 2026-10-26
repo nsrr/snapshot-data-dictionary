@@ -3,5 +3,8 @@
   "display_name": "67. Which do you wish more for yourself: (clarity of reason, strength of compassion)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_67"
+  "domain": "mbti_67",
+  "labels": [
+    "mbti"
+  ]
 }

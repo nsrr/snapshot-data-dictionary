@@ -3,5 +3,8 @@
   "display_name": "51. Are you more likely to trust your: (experience, hunch)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_51"
+  "domain": "mbti_51",
+  "labels": [
+    "mbti"
+  ]
 }

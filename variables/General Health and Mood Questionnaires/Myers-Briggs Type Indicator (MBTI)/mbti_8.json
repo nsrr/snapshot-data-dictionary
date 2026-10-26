@@ -3,5 +3,8 @@
   "display_name": "8. At parties do you: ( Stay late, with increasing energy, Leave early with decreased energy)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_8"
+  "domain": "mbti_8",
+  "labels": [
+    "mbti"
+  ]
 }

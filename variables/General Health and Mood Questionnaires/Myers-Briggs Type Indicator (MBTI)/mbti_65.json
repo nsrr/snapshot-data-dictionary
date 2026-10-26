@@ -3,5 +3,8 @@
   "display_name": "65. In writings do you prefer: (the more literal, the more figurative)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_65"
+  "domain": "mbti_65",
+  "labels": [
+    "mbti"
+  ]
 }

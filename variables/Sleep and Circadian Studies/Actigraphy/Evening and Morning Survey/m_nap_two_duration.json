@@ -1,6 +1,6 @@
 {
   "id": "m_nap_two_duration",
   "display_name": "Duration of second nap",
-  "description": "",
+  "description": "*NSRR addition: Variable units are ambiguous. Most subjects likely provided responses in minutes, however others provided responses in hours.*",
   "type": "integer"
 }

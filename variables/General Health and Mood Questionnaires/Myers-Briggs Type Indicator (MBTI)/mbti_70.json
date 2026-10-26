@@ -3,5 +3,8 @@
   "display_name": "70. Do you tend to be more: (deliberate than spontaneous, spontaneous than deliberate)",
   "description": "",
   "type": "choices",
-  "domain": "mbti_70"
+  "domain": "mbti_70",
+  "labels": [
+    "mbti"
+  ]
 }

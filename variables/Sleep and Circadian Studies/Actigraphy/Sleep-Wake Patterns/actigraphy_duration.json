@@ -3,5 +3,8 @@
   "display_name": "Number of minutes from sleep start to sleep end",
   "description": "",
   "type": "numeric",
-  "units": "minutes (min)"
+  "units": "minutes (min)",
+  "labels": [
+    "sleep_duration"
+  ]
 }
