@@ -1,9 +1,0 @@
-{
-  "id": "dectime_24h",
-  "display_name": "Start sleep time changed to decimal format + 24 hours",
-  "description": "",
-  "type": "numeric",
-  "labels": [
-    "sleep_timing"
-  ]
-}

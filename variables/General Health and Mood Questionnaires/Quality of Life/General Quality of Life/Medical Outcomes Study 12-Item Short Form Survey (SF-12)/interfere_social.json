@@ -1,0 +1,11 @@
+{
+  "id": "interfere_social",
+  "display_name": "Medical Outcomes Study 12-Item Short Form Survey SF-12: During the past 4 weeks, how much of the time has your physical health or emotional problems interfered with your social activities (like visiting friends, relatives, etc.)?",
+  "description": "Item from Medical Outcomes Study 12-Item Short Form [Rand Health Care. 12-Item Short Form Survey (SF-12)](https://www.rand.org/health-care/surveys_tools/mos/12-item-short-form.html)<br><br>[Search for all SF-12 variables within this dataset](https://sleepdata.org/datasets/snapshot/variables?search=mossf12)",
+  "type": "choices",
+  "domain": "time_6",
+  "labels": [
+    "mossf12",
+    "mossf12_12friends"
+  ]
+}

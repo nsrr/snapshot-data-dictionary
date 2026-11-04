@@ -1,6 +1,6 @@
 {
   "id": "lxmax",
-  "display_name": "Highest light measurement",
+  "display_name": "Actigraphy: Highest light measurement",
   "description": "",
   "type": "integer",
   "units": "lux"

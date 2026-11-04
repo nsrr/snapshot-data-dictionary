@@ -1,0 +1,11 @@
+{
+  "id": "mbti_34",
+  "display_name": "Myers-Briggs Type Indicator (MBTI): Which is more admirable: (the ability to organize and be methodical, the ability to adapt and make do)",
+  "description": "Item from the Myers-Briggs Type Indicator (MBTI) [Myers, I. B. 1962](https://doi.org/10.1037/14404-000)<br><br> [Search for all MBTI variables within this dataset](https://sleepdata.org/datasets/snapshot/variables?search=mbti)",
+  "type": "choices",
+  "domain": "mbti_34",
+  "labels": [
+    "mbti_34admirable",
+    "mbti"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "mbti_62",
+  "display_name": "Myers-Briggs Type Indicator (MBTI): Which situation appeals to you more: (the structured and scheduled, the unstructured and unscheduled)",
+  "description": "Item from the Myers-Briggs Type Indicator (MBTI) [Myers, I. B. 1962](https://doi.org/10.1037/14404-000)<br><br> [Search for all MBTI variables within this dataset](https://sleepdata.org/datasets/snapshot/variables?search=mbti)",
+  "type": "choices",
+  "domain": "mbti_62",
+  "labels": [
+    "mbti_62structured",
+    "mbti"
+  ]
+}

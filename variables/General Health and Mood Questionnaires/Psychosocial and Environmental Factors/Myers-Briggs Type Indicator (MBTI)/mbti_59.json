@@ -1,0 +1,11 @@
+{
+  "id": "mbti_59",
+  "display_name": "Myers-Briggs Type Indicator (MBTI): Are you drawn more to: (fundamentals, overtones)",
+  "description": "Item from the Myers-Briggs Type Indicator (MBTI) [Myers, I. B. 1962](https://doi.org/10.1037/14404-000)<br><br> [Search for all MBTI variables within this dataset](https://sleepdata.org/datasets/snapshot/variables?search=mbti)",
+  "type": "choices",
+  "domain": "mbti_59",
+  "labels": [
+    "mbti_59drawnto",
+    "mbti"
+  ]
+}

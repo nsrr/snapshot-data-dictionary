@@ -1,0 +1,12 @@
+{
+  "id": "actigraphy_wk_after_sleep_onset",
+  "display_name": "Actigraphy: For the specific sleep period recorded,  wake after sleep onset - the total duration being awake between sleep onset and offset",
+  "description": "The sleep period can be either main sleep or nap. Source: :nap:",
+  "type": "numeric",
+  "units": "minutes (min)",
+  "labels": [
+    "ttldurws_f2",
+    "sleep_duration",
+    "waso"
+  ]
+}

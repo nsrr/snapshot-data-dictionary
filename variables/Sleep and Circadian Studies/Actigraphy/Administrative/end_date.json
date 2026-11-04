@@ -1,7 +1,0 @@
-{
-  "id": "end_date",
-  "display_name": "End sleep date",
-  "description": "",
-  "type": "date",
-  "units": "yyyy-mm-dd"
-}

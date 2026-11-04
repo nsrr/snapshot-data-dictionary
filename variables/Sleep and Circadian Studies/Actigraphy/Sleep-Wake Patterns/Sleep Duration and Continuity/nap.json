@@ -1,0 +1,10 @@
+{
+  "id": "nap",
+  "display_name": "Actigraphy: Was this sleep period a nap?",
+  "description": "",
+  "type": "choices",
+  "domain": "no_1_yes_2",
+  "labels": [
+    "nap"
+  ]
+}

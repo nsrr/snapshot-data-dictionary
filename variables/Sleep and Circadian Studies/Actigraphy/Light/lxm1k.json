@@ -1,6 +1,6 @@
 {
   "id": "lxm1k",
-  "display_name": "Mintues above 1,000 lux during the sleep start to sleep end interval",
+  "display_name": "Actigraphy: Mintues above 1,000 lux during the sleep start to sleep end interval",
   "description": "",
   "type": "integer",
   "units": "minutes (min)"

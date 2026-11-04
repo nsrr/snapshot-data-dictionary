@@ -1,6 +1,6 @@
 {
   "id": "m_sleep_reason",
   "display_name": "What describes the time you chose to go to bed last night?",
-  "description": "\n-1 = No major factors influenced my decision; I just went to bed when I wanted\n1 = Early because of morning event\n2 = Early because of fatigue\n3 = Early because of illness\n4 = Delayed due to an academic deadline(s)\n5 ='Delayed studying or working on an academic project\n6 = Delayed for social reasons\n7 ='Delayed due to an extracurricular activity\n8 = Delayed due to employment\n9 = 'Delayed due to media (Netflix, social media) \n10 =Couldn't fall asleep \n11 =Other",
+  "description": "\n-1 = No major factors influenced my decision; I just went to bed when I wanted\n1 = Early because of morning event\n2 = Early because of fatigue\n3 = Early because of illness\n4 = Delayed due to an academic deadline(s)\n5 =Delayed studying or working on an academic project\n6 = Delayed for social reasons\n7 =Delayed due to an extracurricular activity\n8 = Delayed due to employment\n9 = Delayed due to media (Netflix, social media) \n10 =Couldn't fall asleep \n11 =Other",
   "type": "string"
 }

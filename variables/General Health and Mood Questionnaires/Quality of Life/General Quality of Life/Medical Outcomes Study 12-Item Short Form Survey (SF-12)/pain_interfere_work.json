@@ -1,0 +1,11 @@
+{
+  "id": "pain_interfere_work",
+  "display_name": "Medical Outcomes Study 12-Item Short Form Survey SF-12: During the past 4 weeks, how much did pain interfere with your normal work (including work outside the home and housework)?",
+  "description": "Item from Medical Outcomes Study 12-Item Short Form [Rand Health Care. 12-Item Short Form Survey (SF-12)](https://www.rand.org/health-care/surveys_tools/mos/12-item-short-form.html)<br><br>[Search for all SF-12 variables within this dataset](https://sleepdata.org/datasets/snapshot/variables?search=mossf12)",
+  "type": "choices",
+  "domain": "pain_interfere_work",
+  "labels": [
+    "mossf12",
+    "mossf12_08pain"
+  ]
+}

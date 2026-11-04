@@ -1,10 +1,11 @@
 {
   "id": "weekly_two",
   "display_name": "In the last week, how often have you felt confident about your ability to handle your personal problems?",
-  "description": "",
+  "description": "Item from the Perceived Stress Scale 4 (PSS-4) [Cohen, S., Kamarck, T., & Mermelstein, R. 1983 (PubMed ID: 6668417)](https://pubmed.ncbi.nlm.nih.gov/6668417)<br><br> [Search for all PSS-4 variables within this dataset](https://sleepdata.org/datasets/snapshot/variables?search=pss4)",
   "type": "choices",
   "domain": "weekly_re",
   "labels": [
-    "pss"
+    "pss4_02confident",
+    "pss4"
   ]
 }

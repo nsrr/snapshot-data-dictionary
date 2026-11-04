@@ -1,6 +1,6 @@
 {
   "id": "start_date",
-  "display_name": "Start sleep date",
+  "display_name": "Actigraphy: Start sleep date",
   "description": "",
   "type": "date",
   "units": "yyyy-mm-dd"

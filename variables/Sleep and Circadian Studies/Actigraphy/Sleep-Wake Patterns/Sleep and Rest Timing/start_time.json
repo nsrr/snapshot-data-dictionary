@@ -1,0 +1,11 @@
+{
+  "id": "start_time",
+  "display_name": "Actigraphy: Start sleep time",
+  "description": "",
+  "type": "time",
+  "units": "HH:MM:SS",
+  "labels": [
+    "sleep_timing",
+    "begtimsp_im_f2"
+  ]
+}

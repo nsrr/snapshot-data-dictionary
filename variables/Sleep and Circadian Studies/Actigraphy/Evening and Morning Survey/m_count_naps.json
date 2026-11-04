@@ -5,6 +5,6 @@
   "type": "integer",
   "units": "number of events",
   "labels": [
-    "numnp_f3"
+    "nap"
   ]
 }

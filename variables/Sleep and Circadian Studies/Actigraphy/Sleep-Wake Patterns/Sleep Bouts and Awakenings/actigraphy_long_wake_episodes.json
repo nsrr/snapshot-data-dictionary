@@ -1,0 +1,11 @@
+{
+  "id": "actigraphy_long_wake_episodes",
+  "display_name": "Actigraphy: For the specific sleep period recorded, number of wake episodes of at least 5 minutes.",
+  "description": "The sleep period can be either main sleep or nap. Source: :nap:",
+  "type": "numeric",
+  "units": "number of events",
+  "labels": [
+    "ttlnumwk_ge5_f2",
+    "sleep_continuation"
+  ]
+}

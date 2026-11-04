@@ -1,0 +1,11 @@
+{
+  "id": "mbti_67",
+  "display_name": "Myers-Briggs Type Indicator (MBTI): Which do you wish more for yourself: (clarity of reason, strength of compassion)",
+  "description": "Item from the Myers-Briggs Type Indicator (MBTI) [Myers, I. B. 1962](https://doi.org/10.1037/14404-000)<br><br> [Search for all MBTI variables within this dataset](https://sleepdata.org/datasets/snapshot/variables?search=mbti)",
+  "type": "choices",
+  "domain": "mbti_67",
+  "labels": [
+    "mbti_67wish",
+    "mbti"
+  ]
+}

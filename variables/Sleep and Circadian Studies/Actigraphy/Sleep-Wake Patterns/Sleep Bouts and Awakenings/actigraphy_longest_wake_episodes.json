@@ -1,0 +1,11 @@
+{
+  "id": "actigraphy_longest_wake_episodes",
+  "display_name": "Actigraphy: For the specific sleep period recorded, duration of the longest wake episode",
+  "description": "The sleep period can be either main sleep or nap. Source: :nap:",
+  "type": "integer",
+  "units": "minutes (min)",
+  "labels": [
+    "maxdurwk_f2",
+    "sleep_continuation"
+  ]
+}

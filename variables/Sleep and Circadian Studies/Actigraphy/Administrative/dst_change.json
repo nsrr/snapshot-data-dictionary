@@ -1,6 +1,6 @@
 {
   "id": "dst_change",
-  "display_name": "Interval at which clocks changed",
+  "display_name": "Actigraphy: Interval at which clocks changed",
   "description": "Flagged on (1) the interval that spans the 2 am switch on the change Sunday, or (2) if no interval spans it, the first interval starting after the switch. Only flagged for participants whose recording covers the switch.",
   "type": "choices",
   "domain": "dst_change"

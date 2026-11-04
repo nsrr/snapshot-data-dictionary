@@ -1,0 +1,11 @@
+{
+  "id": "actigraphy_mod_sleep_efficiency",
+  "display_name": "Actigraphy: For the specific sleep period recorded, sleep maintenance efficiency ",
+  "description": "Sleep maintenance efficiency is the ratio between sleep duration (i.e. total sleep time, tst) and sleep period. Sleep duration is the interval between sleep onset time and sleep offset time while asleep, while sleep period is the interval between sleep onset time and sleep offset time. ",
+  "type": "numeric",
+  "calculation": "actigraphy_sleep_minutes/actigraphy_duration",
+  "labels": [
+    "ttleffsp_f2",
+    "sleep_efficiency"
+  ]
+}

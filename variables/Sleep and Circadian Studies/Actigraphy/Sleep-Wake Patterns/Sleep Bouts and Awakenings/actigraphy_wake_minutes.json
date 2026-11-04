@@ -1,0 +1,11 @@
+{
+  "id": "actigraphy_wake_minutes",
+  "display_name": "Actigraphy: For the specific sleep period recorded, total duration of wake episodes",
+  "description": "The sleep period can be either main sleep or nap. Source: :nap:",
+  "type": "numeric",
+  "units": "minutes (min)",
+  "labels": [
+    "ttldurwk_f2",
+    "sleep_duration"
+  ]
+}

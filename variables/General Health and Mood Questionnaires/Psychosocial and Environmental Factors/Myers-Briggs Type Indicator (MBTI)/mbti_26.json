@@ -1,0 +1,11 @@
+{
+  "id": "mbti_26",
+  "display_name": "Myers-Briggs Type Indicator (MBTI): Is it worse to be: (unjust, merciless)",
+  "description": "Item from the Myers-Briggs Type Indicator (MBTI) [Myers, I. B. 1962](https://doi.org/10.1037/14404-000)<br><br> [Search for all MBTI variables within this dataset](https://sleepdata.org/datasets/snapshot/variables?search=mbti)",
+  "type": "choices",
+  "domain": "mbti_26",
+  "labels": [
+    "mbti_26unjust",
+    "mbti"
+  ]
+}

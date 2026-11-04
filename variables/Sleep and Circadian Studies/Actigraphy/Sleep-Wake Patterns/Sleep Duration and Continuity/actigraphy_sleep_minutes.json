@@ -1,0 +1,11 @@
+{
+  "id": "actigraphy_sleep_minutes",
+  "display_name": "Actigraphy: For the specific sleep period recorded, total sleep duration (the interval between sleep onset time and sleep offset time while asleep)",
+  "description": "The sleep period can be either main sleep or nap. Source: :nap:",
+  "type": "numeric",
+  "units": "minutes (min)",
+  "labels": [
+    "ttldursp_f2",
+    "sleep_duration"
+  ]
+}

@@ -1,6 +1,6 @@
 {
   "id": "lxsd",
-  "display_name": "Standard deviation of light mean",
+  "display_name": "Actigraphy: Standard deviation of light mean",
   "description": "",
   "type": "numeric"
 }

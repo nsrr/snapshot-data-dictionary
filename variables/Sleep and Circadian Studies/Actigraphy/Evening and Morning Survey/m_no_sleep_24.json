@@ -3,5 +3,8 @@
   "display_name": "Did or did not sleep in the last 24 hours?",
   "description": "",
   "type": "choices",
-  "domain": "sleep"
+  "domain": "sleep",
+  "labels": [
+    "sleep_regularity"
+  ]
 }

@@ -1,0 +1,10 @@
+{
+  "id": "dectime_offset",
+  "display_name": "Actigraphy: End sleep time changed to decimal format",
+  "description": "",
+  "type": "numeric",
+  "labels": [
+    "sleep_timing",
+    "endtimsp_im_f2"
+  ]
+}

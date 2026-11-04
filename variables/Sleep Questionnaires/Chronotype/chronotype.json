@@ -1,6 +1,6 @@
 {
   "id": "chronotype",
-  "display_name": "Calculated - Chronotype on the µMunich Chronotype Questionnaire (MCTQ)",
+  "display_name": "Calculated - Chronotype on the Munich Chronotype Questionnaire (MCTQ)",
   "description": "Is estimated using the midpoint between sleep onset and sleep end on free days (MSF), and corrected for potential oversleep on free days (to compensate for sleep debt accumulated over the workweek, MSFsc)",
   "type": "numeric",
   "labels": [

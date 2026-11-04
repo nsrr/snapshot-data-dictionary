@@ -1,0 +1,11 @@
+{
+  "id": "actigraphy_duration",
+  "display_name": "Actigraphy: For the specific sleep period recorded, number of minutes from sleep start to sleep end",
+  "description": "",
+  "type": "numeric",
+  "units": "minutes (min)",
+  "labels": [
+    "ttlprdsp_f2",
+    "sleep_duration"
+  ]
+}

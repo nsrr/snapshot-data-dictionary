@@ -1,6 +1,6 @@
 {
   "id": "lxmin",
-  "display_name": "Lowest light measurement ",
+  "display_name": "Actigraphy: Lowest light measurement ",
   "description": "",
   "type": "integer",
   "units": "lux"

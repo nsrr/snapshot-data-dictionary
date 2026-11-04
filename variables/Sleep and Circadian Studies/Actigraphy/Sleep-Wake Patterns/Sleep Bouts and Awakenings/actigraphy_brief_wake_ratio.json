@@ -1,0 +1,6 @@
+{
+  "id": "actigraphy_brief_wake_ratio",
+  "display_name": "Actigraphy: For the specific sleep period recorded, the ratio of wake episodes <1 minute over total number of wake episodes",
+  "description": "The sleep period can be either main sleep or nap. Source: :nap:",
+  "type": "numeric"
+}

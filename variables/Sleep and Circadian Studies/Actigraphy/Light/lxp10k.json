@@ -1,6 +1,6 @@
 {
   "id": "lxp10k",
-  "display_name": "% of interval above 10,000 lux during the sleep start to sleep end interval",
+  "display_name": "Actigraphy: % of interval above 10,000 lux during the sleep start to sleep end interval",
   "description": "",
   "type": "numeric",
   "units": "Percentage"

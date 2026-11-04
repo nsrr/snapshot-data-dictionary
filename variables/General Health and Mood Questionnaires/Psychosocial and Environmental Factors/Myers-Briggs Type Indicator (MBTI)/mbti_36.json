@@ -1,0 +1,11 @@
+{
+  "id": "mbti_36",
+  "display_name": "Myers-Briggs Type Indicator (MBTI): Does new and non-routine interaction with others: (stimulate and energize you, tax your reserves)",
+  "description": "Item from the Myers-Briggs Type Indicator (MBTI) [Myers, I. B. 1962](https://doi.org/10.1037/14404-000)<br><br> [Search for all MBTI variables within this dataset](https://sleepdata.org/datasets/snapshot/variables?search=mbti)",
+  "type": "choices",
+  "domain": "mbti_36",
+  "labels": [
+    "mbti_36interaction",
+    "mbti"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "id": "end_date",
+  "display_name": "Actigraphy: End sleep date",
+  "description": "",
+  "type": "date",
+  "units": "yyyy-mm-dd"
+}
