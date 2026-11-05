@@ -1,7 +1,7 @@
 {
   "id": "actigraphy_mod_sleep_efficiency",
   "display_name": "Actigraphy: For the specific sleep period recorded, sleep maintenance efficiency ",
-  "description": "Sleep maintenance efficiency is the ratio between sleep duration (i.e. total sleep time, tst) and sleep period. Sleep duration is the interval between sleep onset time and sleep offset time while asleep, while sleep period is the interval between sleep onset time and sleep offset time. ",
+  "description": "Sleep maintenance efficiency is the ratio between sleep duration (i.e. total sleep time, tst) and sleep period. Sleep duration is the interval between sleep onset time and sleep offset time while asleep, while sleep period is the interval between sleep onset time and sleep offset time.<br>The actigraphy data was collected on the non-dominant wrist via AMI MotionLogger-L and consolidated into 60-second epochs. Sleep and wake were scored using a combined approach using both the automatic University of California San Diego (UCSD) sleep-scoring algorithm from the ActionW software and manual scoring by an investigator, guided by diary-reported sleep and wake times, light levels, and activity levels. Non-wear periods were identified by visual inspection.",
   "type": "numeric",
   "calculation": "actigraphy_sleep_minutes/actigraphy_duration",
   "labels": [

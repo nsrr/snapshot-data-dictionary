@@ -1,7 +1,7 @@
 {
   "id": "dst_change",
   "display_name": "Actigraphy: Interval at which clocks changed",
-  "description": "Flagged on (1) the interval that spans the 2 am switch on the change Sunday, or (2) if no interval spans it, the first interval starting after the switch. Only flagged for participants whose recording covers the switch.",
+  "description": "Flagged on (1) the interval that spans the 2 am switch on the change Sunday, or (2) if no interval spans it, the first interval starting after the switch. Only flagged for participants whose recording covers the switch.<br>The actigraphy data was collected on the non-dominant wrist via AMI MotionLogger-L and consolidated into 60-second epochs. Sleep and wake were scored using a combined approach using both the automatic University of California San Diego (UCSD) sleep-scoring algorithm from the ActionW software and manual scoring by an investigator, guided by diary-reported sleep and wake times, light levels, and activity levels. Non-wear periods were identified by visual inspection.",
   "type": "choices",
   "domain": "dst_change"
 }

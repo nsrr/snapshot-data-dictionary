@@ -1,7 +1,7 @@
 {
   "id": "lxp10k",
   "display_name": "Actigraphy: % of interval above 10,000 lux during the sleep start to sleep end interval",
-  "description": "",
+  "description": "The actigraphy data was collected on the non-dominant wrist via AMI MotionLogger-L and consolidated into 60-second epochs. Sleep and wake were scored using a combined approach using both the automatic University of California San Diego (UCSD) sleep-scoring algorithm from the ActionW software and manual scoring by an investigator, guided by diary-reported sleep and wake times, light levels, and activity levels. Non-wear periods were identified by visual inspection.",
   "type": "numeric",
   "units": "Percentage"
 }
