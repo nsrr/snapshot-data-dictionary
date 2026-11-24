@@ -1,4 +1,4 @@
-ver <- "0.1.0.pre"
+ver <- "0.1.0"
 
 library(readxl)
 library(dplyr)
@@ -359,5 +359,3 @@ harmonized_data <- merged[, c("subject_code", "visit", "age", "race", "sex", "et
   dplyr::select(nsrrid, visit, nsrr_age, nsrr_race, nsrr_sex, nsrr_ethnicity, nsrr_bmi)
 
 write_csv(harmonized_data, file.path(out_dir, paste0("snapshot-harmonized-dataset-", ver, ".csv")), na = "")
-
-
