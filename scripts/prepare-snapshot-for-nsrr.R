@@ -7,7 +7,7 @@ library(lubridate)
 library(tibble)
 
 src_dir <- "/Volumes/BWH-SLEEPEPI-NSRR-STAGING/20260901-barger-snapshot/nsrr-prep/source-data"
-out_dir <- file.path("/Volumes/BWH-SLEEPEPI-NSRR-STAGING/20260901-barger-snapshot/nsrr-prep/_releases/0.1.0.pre")
+out_dir <- file.path("/Volumes/BWH-SLEEPEPI-NSRR-STAGING/20260901-barger-snapshot/nsrr-prep/_releases", ver)
 
 ######################################## helpers ########################################
 # reformat variable names
@@ -255,7 +255,7 @@ merged <- merged %>%
   mutate(across(all_of(timestamp_cols), ~ format(.x, "%Y-%m-%d %H:%M:%S"))) %>%
   mutate(across(all_of(mc_date_cols),   ~ format(.x, "%Y-%m-%d")))
 
-write_csv(merged, file.path(out_dir, "snapshot-dataset.0.1.0.pre.csv"), na = "")
+write_csv(merged, file.path(out_dir, paste0("snapshot-dataset.", ver, ".csv")), na = "")
 
 ######################################## write: actigraphy ########################################
 
@@ -299,7 +299,7 @@ actigraphy <- actigraphy %>%
   select(-.row, -.start_dt, -.end_dt, -.year)
 
 actigraphy <- shift_and_format(actigraphy)
-write_csv(actigraphy, file.path(out_dir, "snapshot-actigraphy-intervals-dataset.0.1.0.pre.csv"), na = "")
+write_csv(actigraphy, file.path(out_dir, paste0("snapshot-actigraphy-intervals-dataset.", ver, ".csv")), na = "")
 
 ######################################## write: eDiary ########################################
 
@@ -312,7 +312,7 @@ ediary <- ediary %>%
   relocate(e_created_dst, .after = e_created_at)
 
 ediary <- shift_and_format(ediary)
-write_csv(ediary, file.path(out_dir, "snapshot-ediary-dataset.0.1.0.pre.csv"), na = "")
+write_csv(ediary, file.path(out_dir, paste0("snapshot-ediary-dataset.", ver, ".csv")), na = "")
 
 ######################################## write: weekly questionnaire ########################################
 
@@ -321,7 +321,7 @@ weekly <- weekly %>%
   relocate(created_dst, .after = created_at)
 
 weekly <- shift_and_format(weekly, id = id_col)
-write_csv(weekly, file.path(out_dir, "snapshot-weekly-questionnaire-dataset.0.1.0.pre.csv"), na = "")
+write_csv(weekly, file.path(out_dir, paste0("snapshot-weekly-questionnaire-dataset.", ver, ".csv")), na = "")
 
 
 
@@ -353,10 +353,11 @@ harmonized_data <- merged[, c("subject_code", "visit", "age", "race", "sex", "et
                   ethnicity == "Not Hispanic/Latino" ~ "not hispanic or latino",
                   TRUE ~ "not reported"
                 ),
-                nsrr_bmi = (weight_lbs * 0.453592) / (((height_ft * 12) + height_in) * 0.0254)^2,
+                nsrr_bmi = round((weight_lbs * 0.453592) / (((height_ft * 12) + height_in) * 0.0254)^2, 1),
                 visit = 1
   ) %>%
   dplyr::select(nsrrid, visit, nsrr_age, nsrr_race, nsrr_sex, nsrr_ethnicity, nsrr_bmi)
 
-write_csv(harmonized_data, file.path(out_dir, "snapshot-harmonized-dataset-0.1.0.pre.csv"), na = "")
+write_csv(harmonized_data, file.path(out_dir, paste0("snapshot-harmonized-dataset-", ver, ".csv")), na = "")
+
 
